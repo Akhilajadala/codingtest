@@ -1,0 +1,17 @@
+package com.anudeep.jsp;
+
+public class OddNumbers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int sumOfOdds = 0;
+for(int i=7;i<=21;i=i++)
+{
+	if(i%2!=0)
+	System.out.println(i + " ");
+	sumOfOdds += i;
+	System.out.print("the sum of odd numbers between 7 and 21 is: " + sumOfOdds);
+}
+	}
+
+}
