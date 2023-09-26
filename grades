@@ -1,0 +1,42 @@
+package com.anudeep.jsp;
+import java.util.Scanner;
+
+public class GradeMarks {
+
+	public static void main(String[] args) {
+Scanner s1= new Scanner(System.in);
+int totalmarks=0;
+double averageMarks;
+String grade;
+for(int i=1;i<=5;i++)
+{
+	System.out.print("enter marks " + i);
+	int marks= s1.nextInt();
+	totalmarks += marks;
+}
+	averageMarks= totalmarks/5;
+	if (averageMarks > 90)
+	{
+		grade = "A+";
+	}
+	else if (averageMarks >80)
+	{
+		grade = "A";
+	}
+	else if (averageMarks >60)
+	{
+		grade = "B";
+	}
+	else if (averageMarks >40)
+	{
+		grade = "C";
+}
+	else {
+		grade="F";
+	}
+	System.out.println("Total Marks:" +totalmarks);
+	System.out.println("Average Marks:" +averageMarks);
+	System.out.println("Grade:" +grade);
+	}
+
+}
